@@ -2,13 +2,14 @@ class profile::puppetmaster (
 
 ) {
   class { 'hiera':
-    hierarchy            => [
+    hierarchy => [
       'nodes/%{::clientcert}',
       'locations/%{::location}',
       'environments/%{::applicationtier}',
       'common',
     ],
-    eyaml                => true,
+    datadir   => '/etc/puppetlabs/code/environments/%{::environment}/hieradata',
+    eyaml     => true,
   }
 
 }

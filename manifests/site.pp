@@ -7,5 +7,4 @@ node default {
 
 node puppet.mshome.net {
   include role::puppetmaster
-  #include role::base
 }

@@ -1,6 +1,6 @@
 File { backup => false }
 node default {
-  if $::role {
+  #if $::role {
     include "role::${role}"
-  }
+  #}
 }

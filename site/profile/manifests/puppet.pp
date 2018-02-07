@@ -4,7 +4,7 @@ class profile::puppet (
   class { 'hiera':
     hierarchy => [
       'nodes/%{::clientcert}',
-      'locations/%{::location}',
+      'roles/%{::role}',
       'environments/%{::applicationtier}',
       'common',
     ],

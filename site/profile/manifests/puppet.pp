@@ -1,4 +1,4 @@
-class profile::puppetmaster (
+class profile::puppet (
 
 ) {
   class { 'hiera':

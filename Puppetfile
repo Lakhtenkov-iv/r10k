@@ -2,7 +2,7 @@ forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 
-
+mod 'puppet-hiera', '3.3.1'
 mod 'puppet-nginx', '0.9.0'
 mod 'puppetlabs-docker', '1.0.5'
 mod 'puppetlabs-java', '2.4.0'

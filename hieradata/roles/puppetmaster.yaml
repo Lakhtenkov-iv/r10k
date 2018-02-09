@@ -1,2 +1,2 @@
 classes:
-  - role::${::role}
+  - role::puppetmaster

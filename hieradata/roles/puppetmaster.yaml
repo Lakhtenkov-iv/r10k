@@ -1,2 +1,2 @@
-classes:
-  - role::puppetmaster
+classifier::classes:
+  - puppetmaster

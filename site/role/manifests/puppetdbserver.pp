@@ -1,4 +1,4 @@
-class role::puppetdatabase {
+class role::puppetdbserver {
   include profile::base
   include profile::puppetdbserver
 }

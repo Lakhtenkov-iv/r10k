@@ -1,5 +1,13 @@
 ---
 version: 5
 
-puppetdb_host: 'masterdatabase.mshome.net'
-postgres_host: 'masterdbserver.mshome.net'
+packages:
+  zip:
+    ensure: installed
+  unzip:
+    ensure: installed
+  vim:
+    ensure: installed
+  net-tools:
+    ensure: installed
+

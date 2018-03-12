@@ -1,5 +1,5 @@
-profile::puppetdatabase::puppetdb_host: 'masterdatabase.mshome.net'
-profile::puppetdatabase::postgres_host: 'masterdbserver.mshome.net'
+profile::puppetdatabase::puppetdb_host: 'masterdbserver.mshome.net'
+profile::puppetdatabase::postgres_host: 'masterdatabase.mshome.net'
 
 classes:
   - role::puppetdatabase

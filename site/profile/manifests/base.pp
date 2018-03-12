@@ -14,6 +14,6 @@ class profile::base(
     servers => $ntp_servers,
   }
   
-  $packages = hiera_hash('packages',{})
-  create_resources(package, $packages)
+  #$packages = hiera_hash('packages',{})
+  #create_resources(package, $packages)
 }

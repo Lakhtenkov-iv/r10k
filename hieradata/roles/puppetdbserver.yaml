@@ -1,2 +1,2 @@
-classifier::classes:
-  - puppetdbserver
+classes:
+  - role::puppetdbserver

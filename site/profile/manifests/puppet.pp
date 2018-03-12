@@ -9,7 +9,7 @@ class profile::puppet (
                           {"name" =>  "Basic Hierarchy", "path" =>  ['roles/%{facter.role}.yaml', 'nodes/%{::clientcert}.yaml', 'environments/%{::applicationtier}.yaml']},
                           {"name" =>  "Default yaml file", "path" =>  "common.yaml"},
                         ],
-    eyaml => true,
+    eyaml                => true,
   }
   class { 'puppetdb::master::config':
       puppetdb_server => $puppetdb_host,

@@ -1,5 +1,5 @@
 ---
 version: 5
 
-puppetdb_host = 'masterdatabade.mshome.net'
-postgres_host = 'masterdbserver.mshome.net'
+puppetdb_host: 'masterdatabade.mshome.net'
+postgres_host: 'masterdbserver.mshome.net'

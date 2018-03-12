@@ -6,7 +6,8 @@ class profile::puppet (
     hiera_version => '5',
     hiera5_defaults =>  {"datadir" => "/etc/puppetlabs/code/environments/%{environment}/hieradata", "data_hash" => "yaml_data"},
     hierarchy       =>  [
-                          {"name" =>  "Basic Hierarchy", "path"  =>  ['roles/%{facter.role}.yaml', 'nodes/%{::clientcert}.yaml', 'environments/%{::applicationtier}.yaml', "common.yaml"]
+                          {"name" =>  "Basic Hierarchy", 
+                           "path" =>  ['roles/%{facter.role}.yaml', 'nodes/%{::clientcert}.yaml', 'environments/%{::applicationtier}.yaml', "common.yaml"]},
                         ],
     eyaml => true,
   }

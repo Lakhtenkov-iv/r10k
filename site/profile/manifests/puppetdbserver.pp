@@ -4,8 +4,9 @@ class profile::puppetdbserver (
 ) { 
     class { 'puppetdb': 
         manage_firewall => true,
-    }
-    class { 'puppetdb::server':
         database_host => $postgres_host,
-    } 
+    }
+    #class { 'puppetdb::server':
+    #    database_host => $postgres_host,
+    #} 
 }

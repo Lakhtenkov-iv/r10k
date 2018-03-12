@@ -10,4 +10,6 @@ packages:
     ensure: installed
   net-tools:
     ensure: installed
+  telnet:
+    ensure: installed
 

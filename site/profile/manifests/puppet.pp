@@ -3,14 +3,12 @@ class profile::puppet (
     String $postgres_host = 'postgres.example.lan'
 ) {
   class { 'hiera':
-    hierarchy => [
-      'nodes/%{::clientcert}',
-      'roles/%{::role}',
-      'environments/%{::applicationtier}',
-      'common',
-    ],
-    datadir   => '/etc/puppetlabs/code/environments/%{::environment}/hieradata',
-    eyaml     => true,
+    hiera_version => '5'
+    hiera5_defaults =>  {"datadir" => "/etc/puppetlabs/code/environments/%{environment}/hieradata", "data_hash" => "yaml_data"},
+    hierarchy       =>  [
+                          {"name" =>  "Basic Hierarchy", "path"  =>  ['roles/%{facter.role}.yaml', 'nodes/%{::clientcert}.yaml', 'environments/%{::applicationtier}.yaml', "common.yaml"]
+                        ],
+    eyaml => true
   }
   class { 'puppetdb::master::config':
       puppetdb_server => $puppetdb_host,

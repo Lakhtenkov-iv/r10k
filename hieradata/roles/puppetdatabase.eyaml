@@ -1,5 +1,15 @@
 profile::puppetdatabase::puppetdb_host: 'masterdbserver.mshome.net'
 profile::puppetdatabase::postgres_host: 'masterdatabase.mshome.net'
+profile::puppetdatabase::database_password: >
+    ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
+    DQYJKoZIhvcNAQEBBQAEggEAWC8TK9inQ0U4JVeWurbjgAKqgCSL0Lj0zq5w
+    VZGBgSuKKAD7Fg2geSmmmT7afdI5zJ61lZ49IVtUy7YXjgW6P6RJgR8iFmO9
+    4+XiXGMiLGsl0tk3K4WdVVsleqXyt6bAZ/S57YNEs2B2s5pe+n/E2E0pHsnL
+    bPm4Mwnlj2HIOdqgVZe6F9yJbycG6u8uM4SAyBWaFaHlijOkSJnpzoqEBJYD
+    VKaBCDaVjGoOYXxLqg6g5pODE4ftGmIaZl/HL8ozMFijhJKYkwbf2AynJQkA
+    rPeUYbMhDhg0+UUzcm9kq3XJQexYdfdGtUSp15iHQwuPWfbeH5nNueuGkMCY
+    zddG0TA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBCqYG422WhnCNKTlFrG
+
 
 classes:
   - role::puppetdatabase

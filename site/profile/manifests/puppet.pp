@@ -10,7 +10,8 @@ class profile::puppet (
                           {"name" =>  "Default yaml file", "path" =>  "common.yaml"},
                         ],
     eyaml => true,
-    eyaml_extension => 'yaml',
+    eyaml_extension => 'eyaml',
+    keysdir => '/etc/puppetlabs/puppet/keys'
   }
   class { 'puppetdb::master::config':
       puppetdb_server => $puppetdb_host,

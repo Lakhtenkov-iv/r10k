@@ -10,6 +10,7 @@ class profile::java(
       distribution => $java_se,
       #version => $version,
     }
+  }
   else { 
     java::oracle {  "${java_se}${version}":
       ensure        => 'present',

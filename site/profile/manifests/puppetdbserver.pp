@@ -11,5 +11,8 @@ class profile::puppetdbserver (
         open_listen_port => true,
         open_ssl_listen_port => true,
         manage_firewall => true,
+    }
+    notify {"Password" :
+      message =>  $database_password,
     } 
 }

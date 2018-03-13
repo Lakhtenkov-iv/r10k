@@ -12,7 +12,7 @@ class profile::java(
       #version => $version,
     }
   }
-  else { 
+  elsif $type == 'oracle' { 
     java::oracle {  "${java_se}${version}":
       ensure        => 'present',
       version       => $version,
@@ -21,5 +21,8 @@ class profile::java(
       java_se       => $java_se,
       url_hash      => $url_hash,
     }
+  }
+  else {
+    notice ("Type ${type} not supported.")
   }
 }

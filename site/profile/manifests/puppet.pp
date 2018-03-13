@@ -9,12 +9,11 @@ class profile::puppet (
                           {"name" =>  "Basic Hierarchy", "paths" =>  ['roles/%{facts.role}.yaml', 'nodes/%{::clientcert}.yaml', 'environments/%{::applicationtier}.yaml']},
                           {"name" =>  "Default yaml file", "path" =>  "common.yaml"},
                         ],
-    eyaml => true,
-    eyaml_extension => 'eyaml',
-    keysdir => '/etc/puppetlabs/puppet/keys'
+    #eyaml => true,
+    #keysdir => '/etc/puppetlabs/puppet/keys'
   }
   class { 'puppetdb::master::config':
-      puppetdb_server => $puppetdb_host,
+    puppetdb_server => $puppetdb_host,
   }
 
 }

@@ -13,12 +13,12 @@ class profile::puppetdatabase (
    class { 'puppetdb::database::postgresql':
      stage => first,
      listen_addresses => $postgres_host,
-     #database_username => $database_username,
-     #database_password => $database_password,
+     database_username => $database_username,
+     database_password => $database_password,
    }
-   notify {"Database password" :
-      message =>  $database_password,
-   }
+   #notify {"Database password" :
+   #   message =>  $database_password,
+   #}
     
 }
 

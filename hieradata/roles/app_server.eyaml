@@ -1,2 +1,7 @@
+profile::java::version: 8
+profile::java::java_se: 'jdk'
+profile::java::type: 'oracle'
+profile::java::version_major: '8u161'
+
 classes:
   - role::app_server

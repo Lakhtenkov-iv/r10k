@@ -15,7 +15,7 @@ class profile::java(
       ensure        => 'present',
       version       => $version,
       version_major => $version_major,
-      version_minor => $version_minor,
+      #version_minor => $version_minor,
       java_se       => $java_se,
     }
   }

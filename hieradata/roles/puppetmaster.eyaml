@@ -1,7 +1,7 @@
 profile::puppet::puppetdb_host: 'masterdb.mshome.net'
 profile::puppet::postgres_host: 'masterdatabase.mshome.net'
 
-pforile::base::testpassword: >
+profile::base::testpassword: >
     ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
     DQYJKoZIhvcNAQEBBQAEggEAnXm8sR3aDDc8AtTavtbHs1hqfOPIqE7vvTpo
     X86TjGGvoHYwzempoYwJV0P8HiVixHjveMuJWV7nrz/T/bPxqfIotdRE80Jr

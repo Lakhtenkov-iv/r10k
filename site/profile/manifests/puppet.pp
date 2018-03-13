@@ -11,7 +11,7 @@ class profile::puppet (
     hierarchy       =>  [
                           {"name" =>  "Basic Hierarchy", 
                            "paths" =>  ['roles/%{facts.role}.yaml', 'nodes/%{::clientcert}.yaml', 'environments/%{::applicationtier}.yaml'], 
-                           "options" => {"pkcs7_private_key" => "$confdir/keys/private_key.pkcs7.pem", "pkcs7_public_key" => "$confdir/keys/public_key.pkcs7.pem" }},
+                           "options" => {"pkcs7_private_key" => "$puppet_conf_dir/keys/private_key.pkcs7.pem", "pkcs7_public_key" => "$puppet_conf_dir/keys/public_key.pkcs7.pem" }},
                           {"name" =>  "Default yaml file", "path" =>  "common.yaml"},
                         ],
     

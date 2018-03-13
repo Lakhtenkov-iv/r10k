@@ -2,14 +2,14 @@ profile::puppetdatabase::puppetdb_host: 'masterdbserver.mshome.net'
 profile::puppetdatabase::postgres_host: 'masterdatabase.mshome.net'
 profile::puppetdatabase::database_password: >
     ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
-    DQYJKoZIhvcNAQEBBQAEggEAWC8TK9inQ0U4JVeWurbjgAKqgCSL0Lj0zq5w
-    VZGBgSuKKAD7Fg2geSmmmT7afdI5zJ61lZ49IVtUy7YXjgW6P6RJgR8iFmO9
-    4+XiXGMiLGsl0tk3K4WdVVsleqXyt6bAZ/S57YNEs2B2s5pe+n/E2E0pHsnL
-    bPm4Mwnlj2HIOdqgVZe6F9yJbycG6u8uM4SAyBWaFaHlijOkSJnpzoqEBJYD
-    VKaBCDaVjGoOYXxLqg6g5pODE4ftGmIaZl/HL8ozMFijhJKYkwbf2AynJQkA
-    rPeUYbMhDhg0+UUzcm9kq3XJQexYdfdGtUSp15iHQwuPWfbeH5nNueuGkMCY
-    zddG0TA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBCqYG422WhnCNKTlFrG
-
+    DQYJKoZIhvcNAQEBBQAEggEAFWebLjd4OMRqqWwuv0j8B0HxVFCLPQvGG2Zg
+    mZnq7otCkXoLxp1Z7vr5lTpq3Afwnzl4ikFClEQJug7zb6vGeK9z9rvOU2Fr
+    UQj9dmLBNfMepJsMxRZYBmVAriLqZVjXzKmF98UIecr9k98bjMy+PakQx34R
+    vO+qoDQVPqBO8L+WQHdFg5CepjIqfWieFcGhZwuqQMlRJvKF2CFu+BwRKoJ2
+    VbmLhlW+GjDJc7ad7eCz/QJia7GUqzGSeu7jbiMRBPrTCxIG/ANVv/UwlkEp
+    oxnJOZxukHG7oVZfjwQaSqcuqkqgkbvY3PiBP37XsgmIjdJEDNhfGk7mAXt6
+    4ic8CzA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBAw6jakYAuXhX/nEHoW
+    TuyCgBAhMag++EeCxpNJ+PNnepyz]
 
 classes:
   - role::puppetdatabase

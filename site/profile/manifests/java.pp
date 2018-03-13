@@ -19,7 +19,7 @@ class profile::java(
       version_major => $version_major,
       version_minor => $version_minor,
       java_se       => $java_se,
-      release_hash      => $url_hash,
+      url_hash      => $url_hash,
     }
   }
   else {

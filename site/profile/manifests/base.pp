@@ -6,6 +6,7 @@ class profile::base(
     '3.europe.pool.ntp.org'
   ],
   String $timezone = 'UTC',
+  Stirng $teststring = 'test string',
 ) {
   class { 'timezone':
     timezone => $timezone,
@@ -14,6 +15,10 @@ class profile::base(
     servers => $ntp_servers,
   }
   
+  file { '/testfile': 
+    ensure => present,
+    content => $testsrting,
+  }
   $packages = hiera_hash('packages',{})
   create_resources(package, $packages)
 }

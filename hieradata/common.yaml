@@ -13,4 +13,4 @@ packages:
   telnet:
     ensure: installed
 
-
+profile::base::timezone: 'Europe/Minsk'

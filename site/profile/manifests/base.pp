@@ -6,7 +6,7 @@ class profile::base(
     '3.europe.pool.ntp.org'
   ],
   String $timezone = 'UTC',
-  String $teststring = 'test string',
+  String $testpassword = 'password',
 ) {
   class { 'timezone':
     timezone => $timezone,
@@ -15,10 +15,8 @@ class profile::base(
     servers => $ntp_servers,
   }
   
-  file { '/testfile': 
-    ensure => present,
-    content => $teststring,
-  }
+  notify { "Password: ${testpassword}": }
+
   $packages = hiera_hash('packages',{})
   create_resources(package, $packages)
 }

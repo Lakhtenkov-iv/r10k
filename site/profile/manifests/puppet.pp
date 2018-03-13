@@ -1,6 +1,7 @@
 class profile::puppet (
     String $puppetdb_host = 'puppetdb.example.lan',
     String $postgres_host = 'postgres.example.lan',
+    String $puppet_conf_dir = '/etc/puppetlabs/puppet',
     String $puppet_user = 'puppet',
     String $puppet_user_group  = 'puppet'
 ) {

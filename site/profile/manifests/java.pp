@@ -1,9 +1,9 @@
 class profile::java(
   String $version = '8',
-  String $java_se = 'jdk'
-  Optional[String] $type = 'oracle'
+  String $java_se = 'jdk',
+  Optional[String] $type = 'oracle',
   Optional[String] $version_major = undef,
-  Optional[String] $version_minor = undef
+  Optional[String] $version_minor = undef,
 ) {
   if $type = 'openjdk' {
     class { 'java':

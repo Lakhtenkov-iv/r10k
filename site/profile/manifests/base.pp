@@ -6,7 +6,7 @@ class profile::base(
     '3.europe.pool.ntp.org'
   ],
   String $timezone = 'UTC',
-  Stirng $teststring = 'test string',
+  String $teststring = 'test string',
 ) {
   class { 'timezone':
     timezone => $timezone,

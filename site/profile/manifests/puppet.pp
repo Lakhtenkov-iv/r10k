@@ -10,7 +10,7 @@ class profile::puppet (
     hiera5_defaults =>  {"datadir" => "/etc/puppetlabs/code/environments/%{environment}/hieradata", "data_hash" => "yaml_data"},
     hierarchy       =>  [
                           {"name" =>  "Basic Hierarchy", 
-                           "paths" =>  ['roles/%{facts.role}.eyaml', 'nodes/%{::clientcert}.eyaml', 'environments/%{::applicationtier}.eyaml'], 
+                           "paths" =>  ['roles/%{facts.role}.yaml', 'nodes/%{::clientcert}.yaml', 'environments/%{::applicationtier}.yaml'], 
                            "options" => {"pkcs7_private_key" => "$puppet_conf_dir/keys/private_key.pkcs7.pem", "pkcs7_public_key" => "$puppet_conf_dir/keys/public_key.pkcs7.pem" }},
                           {"name" =>  "Default yaml file", "path" =>  "common.yaml"},
                         ],

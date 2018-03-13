@@ -17,7 +17,7 @@ class profile::base(
   
   file { '/testfile': 
     ensure => present,
-    content => $testsrting,
+    content => $teststring,
   }
   $packages = hiera_hash('packages',{})
   create_resources(package, $packages)

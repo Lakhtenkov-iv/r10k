@@ -4,7 +4,7 @@ class profile::java(
   Optional[String] $type = 'oracle',
   Optional[String] $version_major = undef,
   Optional[String] $version_minor = undef,
-  Optional [String] $url_hash = undef,
+  Optional[String] $url_hash = undef,
 ) {
   if $type == 'openjdk' {
     class { 'java':

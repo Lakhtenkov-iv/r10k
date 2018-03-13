@@ -16,10 +16,9 @@ class profile::puppetdatabase (
      #database_username => $database_username,
      #database_password => $database_password,
    }
-   #class { '::postgresql::server':
-   #  stage => last,
-   #  datadir => '/data',
-   #}
+   notify {"Database password" :
+      message =>  $database_password,
+   }
     
 }
 

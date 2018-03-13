@@ -5,7 +5,7 @@ class profile::java(
   Optional[String] $version_major = undef,
   Optional[String] $version_minor = undef,
 ) {
-  if $type = 'openjdk' {
+  if $type == 'openjdk' {
     class { 'java':
       distribution => $java_se,
       #version => $version,

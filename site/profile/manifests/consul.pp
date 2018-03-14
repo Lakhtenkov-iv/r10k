@@ -16,7 +16,7 @@ class profile::consul (
         'data_dir'         => $datadir,
         'datacenter'       => $datacenter,
         'log_level'        => 'INFO',
-        'node_name'        => ${::fqdn},
+        'node_name'        => $::fqdn,
         'server'           => true,
       }
     }

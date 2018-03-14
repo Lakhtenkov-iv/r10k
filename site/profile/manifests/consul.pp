@@ -4,7 +4,7 @@ class profile::consul (
   String $datadir = '/opt/consul',
   String $consule_key = undef,
   String $node_name = $::fqdn,
-  String $ui_listen_host = '0.0.0.0'
+  String $ui_listen_host = '0.0.0.0',
   Boolean $ui_install = false,
   Boolean $server = false,
   Boolean $bootstrap = false,

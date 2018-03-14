@@ -12,7 +12,7 @@ class profile::consul (
     class { '::consul':
       version => $version,
       config_hash => {
-        'bootstrap'        => ${bootstrap},
+        'bootstrap'        => $bootstrap,
         'data_dir'         => '${datadir}',
         'datacenter'       => '${datacenter}',
         'log_level'        => 'INFO',
@@ -22,6 +22,7 @@ class profile::consul (
     }
   } else {
     class { '::consul':
+      version => $version,
       config_hash => {
         'data_dir'   => '${datadir}',
         'datacenter' => '${datacenter}',

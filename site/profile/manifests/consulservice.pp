@@ -5,12 +5,12 @@ class profile::consulservice (
   String $url = 'http://localhost:42/status',
 ) {
   ::consul::service { $service_name:
-    address => $address
+    address => $address,
     checks  => [
-    {
-      http     => $url,
-      interval => '10s'
-    }
+      {
+        http     => $url,
+        interval => '10s'
+      }
     ],
     port    => $port,
     tags    => ['test']

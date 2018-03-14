@@ -5,6 +5,7 @@ profile::puppet::postgres_host: 'wkga-na-prd-pdb-02'
 profile::consul::version: '1.0.6'
 profile::consul::datacenter: 'ilakhtenkov'
 profile::consul::datadir: '/opt/consul'
+profile::consul::node_name: 'wkga-na-prd-pm-01'
 profile::consul::server: true
 profile::consul::bootstrap: true
 profile::consul::consul_servers: [ %{facts.puppet_master_ip_address} ]

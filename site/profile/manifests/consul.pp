@@ -3,6 +3,7 @@ class profile::consul (
   String $datacenter = 'ilakhtenkov',
   String $datadir = '/opt/consul',
   String $consule_key = undef,
+  Stirng $node_name = $::fqdn
   Boolean $server = false,
   Boolean $bootstrap = false,
   Array $consul_servers = [
@@ -17,7 +18,7 @@ class profile::consul (
         'data_dir'         => $datadir,
         'datacenter'       => $datacenter,
         'log_level'        => 'INFO',
-        'node_name'        => $::fqdn,
+        'node_name'        => $node_name,
         'server'           => true,
       }
     }
@@ -25,10 +26,10 @@ class profile::consul (
     class { '::consul':
       version => $version,
       config_hash => {
-        'data_dir'   => '${datadir}',
-        'datacenter' => '${datacenter}',
+        'data_dir'   => $datadir,
+        'datacenter' => $datacenter,
         'log_level'  => 'INFO',
-        'node_name'  => '${::fqdn}',
+        'node_name'  => $node_name,
         'retry_join' => $consul_servers,
       }
     }

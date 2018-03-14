@@ -19,7 +19,6 @@ class profile::consul (
         'log_level'        => 'INFO',
         'node_name'        => $::fqdn,
         'server'           => true,
-        'encrypt'          => $consule_key,
       }
     }
   } else {

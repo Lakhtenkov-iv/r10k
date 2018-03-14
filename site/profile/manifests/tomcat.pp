@@ -3,7 +3,7 @@ class profile::tomcat (
 ) {
   $tomcat_major_version = $tomcat_version.split('.')[0] 
   notify {"Test" :
-      message =>  $tomcat_version,
+      message =>  split($tomcat_version, '.'),
     }
   
   #tomcat::install { '/opt/tomcat8':

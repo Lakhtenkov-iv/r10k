@@ -2,6 +2,7 @@ class profile::consul (
   String $version = '1.0.6',
   String $datacenter = 'ilakhtenkov',
   String $datadir = '/opt/consul',
+  String $consule_key = undef,
   Boolean $server = false,
   Boolean $bootstrap = false,
   Array $consul_servers = [
@@ -18,6 +19,7 @@ class profile::consul (
         'log_level'        => 'INFO',
         'node_name'        => $::fqdn,
         'server'           => true,
+        'encrypt'          => $consule_key,
       }
     }
   } else {

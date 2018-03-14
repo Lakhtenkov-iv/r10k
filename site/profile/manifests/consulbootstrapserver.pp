@@ -1,6 +1,6 @@
 class profile::consulbootstrapserver (
   String $version = '1.0.6'
-  Srting $datacenter = 'ilakhtenkov'
+  String $datacenter = 'ilakhtenkov'
 ) {
   class { '::consul':
     version => $version

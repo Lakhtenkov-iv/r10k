@@ -1,5 +1,6 @@
 profile::puppet::puppetdb_host: 'masterdb.mshome.net'
 profile::puppet::postgres_host: 'masterdatabase.mshome.net'
+profile::consul::version: '1.0.6'
 
 classes:
   - role::puppetmaster

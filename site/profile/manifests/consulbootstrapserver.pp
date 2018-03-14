@@ -1,5 +1,5 @@
 class profile::consulbootstrapserver (
-
+  String $version = '1.0.6'
 ) {
   class { '::consul':
     config_hash => {
@@ -9,6 +9,7 @@ class profile::consulbootstrapserver (
       'log_level'        => 'INFO',
       'node_name'        => '$::fqdn',
       'server'           => true,
+      'version'          => $version
     }
   }
 }

@@ -4,6 +4,8 @@ class profile::consul (
   String $datadir = '/opt/consul',
   String $consule_key = undef,
   String $node_name = $::fqdn,
+  String $ui_listen_host = '0.0.0.0'
+  Boolean $ui_install = false,
   Boolean $server = false,
   Boolean $bootstrap = false,
   Array $consul_servers = [
@@ -21,6 +23,8 @@ class profile::consul (
         'node_name'        => $node_name,
         'server'           => true,
         'encrypt'          => $consule_key,
+        'ui'               => $ui_install,
+        'client_addr'      => $ui_listen_host,
       }
     }
   } else {

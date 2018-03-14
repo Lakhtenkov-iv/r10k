@@ -20,6 +20,7 @@ class profile::consul (
         'log_level'        => 'INFO',
         'node_name'        => $node_name,
         'server'           => true,
+        'encrypt'          => $consule_key,
       }
     }
   } else {

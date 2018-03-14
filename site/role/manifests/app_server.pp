@@ -4,4 +4,5 @@ class role::app_server {
   include profile::consul
   include profile::java
   include profile::tomcat
+  include profile::consulservice
 }

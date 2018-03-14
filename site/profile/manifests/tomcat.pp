@@ -1,7 +1,7 @@
 class profile::tomcat (
   String $tomcat_version = '8.5.29',
 ) {
-  $tomcat_major_version = split($tomcat_version,'.') 
+  $tomcat_major_version = split($tomcat_version, '[.]')[0] 
   
   notify {"Test" :
     message =>  $tomcat_major_version,

@@ -1,5 +1,24 @@
 profile::puppet::puppetdb_host: 'masterdb.mshome.net'
 profile::puppet::postgres_host: 'masterdatabase.mshome.net'
 
+#-------------Consul configuration------------------------
+profile::consul::version: '1.0.6'
+profile::consul::datacenter: 'ilakhtenkov'
+profile::consul::datadir: '/opt/consul'
+profile::consul::server: true
+profile::consul::bootstrap: true
+profile::consul::consule_key: >
+    ENC[PKCS7,MIIBiQYJKoZIhvcNAQcDoIIBejCCAXYCAQAxggEhMIIBHQIBADAFMAACAQEw
+    DQYJKoZIhvcNAQEBBQAEggEAsEpoiT0/B+twACHLVuyvJdO4xXUMtImev+S7
+    S+eLh5DS/HATID8r/Ob99us6+I2/Ly58zPvjyAgQb4n8YwsgmmgWLPxQTwmh
+    VUIVzJ4vImZotQ1tYYRJAGCmCUjkJbL6q/Lkblc6TUv9mmodrPtzcTyhn6K7
+    eDPqDS4vZlpX1VbqEChN7CKvTjpWkNnKXd/SpMJckfkHo9ZwyimNdmlydmI1
+    itbpoCEu+9Fp6qHdogTrK+iCeZTGQGV6++9PbkuSm20amJWBLFbHZYHmQoBR
+    /TDaeE9BNnLEyje3+CIeVk2W9imYiYDc1TUIdt8Qfd7zCHXFebvSZkOn6IPB
+    +SLugDBMBgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBDdxlpxKopUzYWhVXPW
+    N+SOgCB50ICjxbGvv8o1KMauA+OORN2W3ptu+cpZC7CkVnS9dw==]
+
+
+
 classes:
   - role::puppetmaster

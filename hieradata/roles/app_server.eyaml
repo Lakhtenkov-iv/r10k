@@ -1,2 +1,9 @@
+profile::java::version: '8'
+profile::java::java_se: 'jdk'
+profile::java::type: 'oracle'
+profile::java::version_major: '8u161'
+profile::java::version_minor: 'b12'
+profilr::java::url_hash: '2f38c3b165be4555a1fa6e98c45e0808'
+
 classes:
   - role::app_server

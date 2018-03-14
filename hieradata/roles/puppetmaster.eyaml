@@ -1,6 +1,14 @@
 profile::puppet::puppetdb_host: 'masterdb.mshome.net'
 profile::puppet::postgres_host: 'masterdatabase.mshome.net'
+
+#-------------Consul configuration------------------------
 profile::consul::version: '1.0.6'
+profile::consul::datacenter: 'ilakhtenkov'
+profile::consul::datadir: '/opt/consul'
+profile::consul::server: true
+profile::consul::bootstrap: true
+
+
 
 classes:
   - role::puppetmaster

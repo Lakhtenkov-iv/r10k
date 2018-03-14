@@ -32,6 +32,7 @@ class profile::consul (
         'log_level'  => 'INFO',
         'node_name'  => $::fqdn,
         'retry_join' => $consul_servers,
+        'encrypt'          => $consule_key,
       }
     }
   }

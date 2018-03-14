@@ -8,7 +8,6 @@ class profile::tomcat (
   }
   tomcat::instance { 'current':
     catalina_home => "/opt/tomcat/tomcat${tomcat_version}",
-    catalina_base => '/opt/tomcat/current',
   }
   
   

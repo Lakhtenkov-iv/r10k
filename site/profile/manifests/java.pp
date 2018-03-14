@@ -25,4 +25,9 @@ class profile::java(
   else {
     notice ("Type ${type} not supported.")
   }
+  #if $facts['os']['family'] == 'Debian' {
+  #  alternatives { 'java':
+  #    path => $java::oracle::,
+  #  }
+  #}
 }

@@ -3,6 +3,7 @@ forge 'http://forge.puppetlabs.com'
 # Modules from the Puppet Forge
 mod 'camptocamp-systemd', '1.1.1'
 mod 'KyleAnderson-consul', '3.3.0'
+mod 'puppet-alternatives', '2.0.0'
 mod 'puppet-archive', '2.2.0'
 mod 'puppet-hiera', '3.3.1'
 mod 'puppet-nginx', '0.9.0'

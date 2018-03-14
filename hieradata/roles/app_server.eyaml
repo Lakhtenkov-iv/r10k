@@ -26,8 +26,8 @@ profile::consul::consule_key: >
     N+SOgCB50ICjxbGvv8o1KMauA+OORN2W3ptu+cpZC7CkVnS9dw==]
 
 #-------------Consul service configuration----------------
-profile::consulservice::service_name
-profile::consulservice::port: 8080
+profile::consulservice::service_name: 'tomcat' 
+profile::consulservice::port: '8080'
 profile::consulservice::url: 'http://localhost:8080/'
 
 classes:

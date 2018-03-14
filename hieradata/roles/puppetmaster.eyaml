@@ -1,5 +1,5 @@
-profile::puppet::puppetdb_host: 'masterdb.mshome.net'
-profile::puppet::postgres_host: 'masterdatabase.mshome.net'
+profile::puppet::puppetdb_host: 'wkga-na-prd-pdb-01'
+profile::puppet::postgres_host: 'wkga-na-prd-pdb-02'
 
 #-------------Consul configuration------------------------
 profile::consul::version: '1.0.6'
@@ -7,7 +7,7 @@ profile::consul::datacenter: 'ilakhtenkov'
 profile::consul::datadir: '/opt/consul'
 profile::consul::server: true
 profile::consul::bootstrap: true
-profile::consul::consule_key: >
+#profile::consul::consule_key: >
     ENC[PKCS7,MIIBiQYJKoZIhvcNAQcDoIIBejCCAXYCAQAxggEhMIIBHQIBADAFMAACAQEw
     DQYJKoZIhvcNAQEBBQAEggEAsEpoiT0/B+twACHLVuyvJdO4xXUMtImev+S7
     S+eLh5DS/HATID8r/Ob99us6+I2/Ly58zPvjyAgQb4n8YwsgmmgWLPxQTwmh

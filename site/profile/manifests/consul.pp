@@ -13,10 +13,10 @@ class profile::consul (
       version => $version,
       config_hash => {
         'bootstrap'        => $bootstrap,
-        'data_dir'         => '${datadir}',
-        'datacenter'       => '${datacenter}',
+        'data_dir'         => $datadir,
+        'datacenter'       => $datacenter,
         'log_level'        => 'INFO',
-        'node_name'        => '${::fqdn}',
+        'node_name'        => ${::fqdn},
         'server'           => true,
       }
     }

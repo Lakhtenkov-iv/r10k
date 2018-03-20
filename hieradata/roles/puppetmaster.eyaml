@@ -8,7 +8,7 @@ profile::consul::datadir: '/opt/consul'
 profile::consul::node_name: 'wkga-na-prd-pm-01'
 profile::consul::server: true
 profile::consul::bootstrap: true
-profile::consul::consul_servers: [ %{facts.puppet_master_ip_address} ]
+#profile::consul::consul_servers: [ %{facts.puppet_master_ip_address} ]
 profile::consul::consule_key: >
     ENC[PKCS7,MIIBiQYJKoZIhvcNAQcDoIIBejCCAXYCAQAxggEhMIIBHQIBADAFMAACAQEw
     DQYJKoZIhvcNAQEBBQAEggEAsEpoiT0/B+twACHLVuyvJdO4xXUMtImev+S7

@@ -3,7 +3,7 @@ class profile::consul (
   String $datacenter = 'ilakhtenkov',
   String $datadir = '/opt/consul',
   String $consule_key = undef,
-  Stirng $node_name = $::fqdn
+  Stirng $node_name = $::fqdn,
   Boolean $server = false,
   Boolean $bootstrap = false,
   Array $consul_servers = [
